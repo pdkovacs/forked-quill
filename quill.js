@@ -15,7 +15,12 @@ import List from './formats/list';
 import { BackgroundClass, BackgroundStyle } from './formats/background';
 import { ColorClass, ColorStyle } from './formats/color';
 import { FontClass, FontStyle } from './formats/font';
-import { SizeClass, SizeStyle } from './formats/size';
+import {
+  SizeClass,
+  SizeStyle,
+  ListItemSizeClass,
+  ListItemSizeStyle,
+} from './formats/size';
 
 import Bold from './formats/bold';
 import Italic from './formats/italic';
@@ -53,6 +58,7 @@ Quill.register(
     'attributors/class/direction': DirectionClass,
     'attributors/class/font': FontClass,
     'attributors/class/size': SizeClass,
+    'attributors/class/list-item-size': ListItemSizeClass,
 
     'attributors/style/align': AlignStyle,
     'attributors/style/background': BackgroundStyle,
@@ -60,6 +66,7 @@ Quill.register(
     'attributors/style/direction': DirectionStyle,
     'attributors/style/font': FontStyle,
     'attributors/style/size': SizeStyle,
+    'attributors/style/list-item-size': ListItemSizeStyle,
   },
   true,
 );
@@ -74,6 +81,7 @@ Quill.register(
     'formats/color': ColorStyle,
     'formats/font': FontClass,
     'formats/size': SizeClass,
+    'formats/list-item-size': ListItemSizeClass,
 
     'formats/blockquote': Blockquote,
     'formats/code-block': CodeBlock,
